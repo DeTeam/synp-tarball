@@ -1,0 +1,18 @@
+{
+  "name": "synp-tarball",
+  "version": "1.0.0",
+  "description": "Example of how synp generates incorrect package-lock.json when tarballs are in package.json",
+  "main": "index.js",
+  "scripts": {
+    "try-synp": "synp --source-file yarn.lock && npm audit",
+    "test": "echo ok"
+  },
+  "author": "Timur Amirov",
+  "license": "MIT",
+  "devDependencies": {
+    "synp": "^1.3.1"
+  },
+  "dependencies": {
+    "lodash": "https://github.com/lodash/lodash/archive/4.17.11.tar.gz"
+  }
+}
